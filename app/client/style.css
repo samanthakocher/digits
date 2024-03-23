@@ -3,15 +3,32 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
+  --matr-navbar-bg: #6d4d32;
+  --matr-navbar-bg-rgb: 109, 77, 50;
+  --matr-navbar-text-color: white;
+  --matr-navbar-highlight-text: khaki;
 }
 
 /* Change bootstrap variable values.
  See https://getbootstrap.com/docs/5.2/customize/css-variables/
  */
 body {
-  --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  --bs-dark: var(--matr-navbar-bg);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+  background-size: cover;
+  background: fixed center url("https://img.freepik.com/free-photo/beige-abstract-wallpaper-background-image_53876-102527.jpg?w=1380&t=st=1711174889~exp=1711175489~hmac=0524ff3b6f3162ee0d5890191c566d55988e52674f893850e465d6a81ab31f9e");
+}
+
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
+}
+
+.bg-dark a.dropdown-item {
+  color: var(--matr-navbar-bg);
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -25,4 +42,8 @@ body {
   color: var(--bs-dark);
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+footer, footer a {
+  color: var(--matr-navbar-text-color);
 }
