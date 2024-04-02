@@ -18,7 +18,7 @@ const EditContact = () => {
   // console.log('EditContact', _id);
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { doc, ready } = useTracker(() => {
-    // Get access to Contact documents.
+    // Get access to Note documents.
     const subscription = Meteor.subscribe(Contacts.userPublicationName);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
