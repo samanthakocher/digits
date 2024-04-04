@@ -1,3 +1,5 @@
+# digits-semantic-ui
+
 <img src="doc/landing.png">
 
 Digits is an application that allows users to:
