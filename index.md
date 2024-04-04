@@ -12,18 +12,28 @@ Second, download a copy of Digits. Note that Digits is a private repo and so you
 
 Third, cd into the app directory, and install the required libraries with:
 
+<img src="/doc/meteor-npm-install.png">
+
 Once the libraries are installed, you can run the application by invoking:
+
+<img src="/doc/meteor-npm-run-start.png">
 
 The first time you run the app, it will create some default users and data. Here is the output:
 
+<img src="run-start-output.png">
+
 
 <Strong>Note regarding bcrypt warning.</Strong> You will also get the following message when you run this application.
+
+<img src="/doc/bcrypt.png">
 
 On some operating systems (particularly Windows), installing bcrypt is much more difficult than implied by the above message. Bcrypt is only used in Meteor for password checking, so the performance implications are negligible until your site has very high traffic. You can safely ignore this warning without any problems during initial stages of development.
 
 If all goes well, the template application will appear at http://localhost:3000. You can login using the credentials in settings.development.json, or else register a new account.
 
 Lastly, you can run ESLint over the code in the imports/ directory with:
+
+<img src="/doc/run-lint.png">
 
 ## User Interface Walkthrough
 
